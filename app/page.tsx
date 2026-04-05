@@ -51,10 +51,10 @@ export default function LandingPage() {
     <div className="flex flex-col">
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-zinc-100 bg-white/80 backdrop-blur-lg">
-        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
+        <div className="mx-auto flex h-14 sm:h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
           <div className="flex items-center gap-2">
-            <Image src="/icon.png" alt="UruBot" width={32} height={32} className="rounded-lg" />
-            <span className="text-lg font-bold text-zinc-900">UruBot</span>
+            <Image src="/icon.png" alt="UruBot" width={28} height={28} className="rounded-lg sm:w-8 sm:h-8" />
+            <span className="text-base sm:text-lg font-bold text-zinc-900">UruBot</span>
           </div>
           <nav className="hidden sm:flex items-center gap-6 text-sm text-zinc-600">
             <a href="#features" className="hover:text-zinc-900 transition-colors">機能</a>
@@ -63,7 +63,7 @@ export default function LandingPage() {
           </nav>
           <a
             href="https://urubot.app/signup"
-            className="rounded-full bg-zinc-900 px-5 py-2 text-sm font-medium text-white hover:bg-zinc-700 transition-colors"
+            className="rounded-full bg-zinc-900 px-4 py-1.5 text-xs sm:px-5 sm:py-2 sm:text-sm font-medium text-white hover:bg-zinc-700 transition-colors"
           >
             無料で始める
           </a>
@@ -71,93 +71,93 @@ export default function LandingPage() {
       </header>
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-blue-50 via-white to-white py-20 sm:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-b from-blue-50 via-white to-white py-14 sm:py-32">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-100/40 via-transparent to-transparent" />
-        <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6">
+        <div className="relative mx-auto max-w-4xl px-5 text-center sm:px-6">
           <div className="animate-fade-in-up">
             <span className="inline-flex items-center gap-1.5 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
               <span className="h-1.5 w-1.5 rounded-full bg-blue-500" />
               Powered by Claude AI
             </span>
           </div>
-          <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-zinc-900 sm:text-6xl animate-fade-in-up animate-delay-100">
+          <h1 className="mt-5 text-3xl font-extrabold tracking-tight text-zinc-900 sm:mt-6 sm:text-6xl animate-fade-in-up animate-delay-100">
             AIがThreads運用を
             <br />
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               まるごと自動化
             </span>
           </h1>
-          <p className="mt-6 text-lg text-zinc-600 sm:text-xl animate-fade-in-up animate-delay-200">
+          <p className="mt-4 text-base text-zinc-600 sm:mt-6 sm:text-xl animate-fade-in-up animate-delay-200">
             投稿生成、競合分析、スコアリング、スケジュール投稿。
             <br className="hidden sm:block" />
             UruBotなら、毎日の投稿作業を90%削減できます。
           </p>
-          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center animate-fade-in-up animate-delay-300">
+          <div className="mt-8 flex flex-col items-center gap-3 sm:mt-10 sm:flex-row sm:justify-center sm:gap-4 animate-fade-in-up animate-delay-300">
             <a
               href="https://urubot.app/signup"
-              className="w-full sm:w-auto rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all hover:-translate-y-0.5"
+              className="w-full sm:w-auto rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-3 text-sm sm:py-3.5 sm:text-base font-semibold text-white shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all hover:-translate-y-0.5"
             >
               無料で始める
             </a>
             <a
               href="#features"
-              className="w-full sm:w-auto rounded-full border border-zinc-300 px-8 py-3.5 text-base font-semibold text-zinc-700 hover:bg-zinc-50 transition-colors"
+              className="w-full sm:w-auto rounded-full border border-zinc-300 px-8 py-3 text-sm sm:py-3.5 sm:text-base font-semibold text-zinc-700 hover:bg-zinc-50 transition-colors"
             >
               機能を見る
             </a>
           </div>
-          <p className="mt-4 text-xs text-zinc-400 animate-fade-in-up animate-delay-400">
+          <p className="mt-3 text-xs text-zinc-400 sm:mt-4 animate-fade-in-up animate-delay-400">
             クレジットカード不要 / 14日間無料 / いつでもキャンセル可能
           </p>
         </div>
       </section>
 
       {/* Social Proof */}
-      <section className="border-y border-zinc-100 bg-zinc-50 py-10">
+      <section className="border-y border-zinc-100 bg-zinc-50 py-8 sm:py-10">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-16">
+          <div className="flex items-center justify-center gap-6 sm:gap-16">
             <div>
-              <div className="text-3xl font-bold text-zinc-900">12+</div>
-              <div className="mt-1 text-sm text-zinc-500">搭載機能</div>
+              <div className="text-2xl sm:text-3xl font-bold text-zinc-900">12+</div>
+              <div className="mt-1 text-xs sm:text-sm text-zinc-500">搭載機能</div>
             </div>
             <div className="h-8 w-px bg-zinc-200" />
             <div>
-              <div className="text-3xl font-bold text-zinc-900">Claude AI</div>
-              <div className="mt-1 text-sm text-zinc-500">最新モデル搭載</div>
+              <div className="text-2xl sm:text-3xl font-bold text-zinc-900">Claude AI</div>
+              <div className="mt-1 text-xs sm:text-sm text-zinc-500">最新モデル搭載</div>
             </div>
-            <div className="h-8 w-px bg-zinc-200 hidden sm:block" />
+            <div className="h-8 w-px bg-zinc-200" />
             <div>
-              <div className="text-3xl font-bold text-zinc-900">90%</div>
-              <div className="mt-1 text-sm text-zinc-500">作業時間を削減</div>
+              <div className="text-2xl sm:text-3xl font-bold text-zinc-900">90%</div>
+              <div className="mt-1 text-xs sm:text-sm text-zinc-500">作業時間を削減</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Features */}
-      <section id="features" className="py-20 sm:py-28">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section id="features" className="py-14 sm:py-28">
+        <div className="mx-auto max-w-6xl px-5 sm:px-6">
           <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
+            <h2 className="text-2xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
               Threads運用に必要な<span className="text-blue-600">すべて</span>が揃う
             </h2>
-            <p className="mt-4 text-lg text-zinc-500">
+            <p className="mt-3 text-sm sm:mt-4 sm:text-lg text-zinc-500">
               投稿の作成から分析まで、ワンストップで完結
             </p>
           </div>
-          <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-4 sm:mt-16 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((f) => (
               <div
                 key={f.title}
-                className="group rounded-2xl border border-zinc-200 bg-white p-6 transition-all hover:border-blue-200 hover:shadow-lg hover:shadow-blue-500/5"
+                className="group rounded-2xl border border-zinc-200 bg-white p-5 sm:p-6 transition-all hover:border-blue-200 hover:shadow-lg hover:shadow-blue-500/5"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-purple-500 text-white">
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-purple-500 text-white">
+                  <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d={f.icon} />
                   </svg>
                 </div>
-                <h3 className="mt-4 text-lg font-semibold text-zinc-900">{f.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-zinc-500">{f.description}</p>
+                <h3 className="mt-3 text-base sm:mt-4 sm:text-lg font-semibold text-zinc-900">{f.title}</h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-zinc-500 sm:mt-2">{f.description}</p>
               </div>
             ))}
           </div>
@@ -165,24 +165,24 @@ export default function LandingPage() {
       </section>
 
       {/* How it works */}
-      <section id="how-it-works" className="bg-zinc-50 py-20 sm:py-28">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+      <section id="how-it-works" className="bg-zinc-50 py-14 sm:py-28">
+        <div className="mx-auto max-w-4xl px-5 sm:px-6">
           <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
+            <h2 className="text-2xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
               始め方は<span className="text-blue-600">かんたん</span>
             </h2>
-            <p className="mt-4 text-lg text-zinc-500">
+            <p className="mt-3 text-sm sm:mt-4 sm:text-lg text-zinc-500">
               4ステップで今日から自動運用をスタート
             </p>
           </div>
-          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid grid-cols-2 gap-4 sm:mt-16 sm:gap-6 lg:grid-cols-4">
             {steps.map((s) => (
-              <div key={s.num} className="relative rounded-2xl bg-white p-6 shadow-sm">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-purple-600 text-lg font-bold text-white">
+              <div key={s.num} className="relative rounded-2xl bg-white p-4 sm:p-6 shadow-sm">
+                <div className="flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-purple-600 text-sm sm:text-lg font-bold text-white">
                   {s.num}
                 </div>
-                <h3 className="mt-4 font-semibold text-zinc-900">{s.title}</h3>
-                <p className="mt-1 text-sm text-zinc-500">{s.desc}</p>
+                <h3 className="mt-3 text-sm sm:mt-4 sm:text-base font-semibold text-zinc-900">{s.title}</h3>
+                <p className="mt-1 text-xs sm:text-sm text-zinc-500">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -190,26 +190,26 @@ export default function LandingPage() {
       </section>
 
       {/* Pricing */}
-      <section id="pricing" className="py-20 sm:py-28">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+      <section id="pricing" className="py-14 sm:py-28">
+        <div className="mx-auto max-w-4xl px-5 sm:px-6">
           <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
+            <h2 className="text-2xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
               シンプルな料金プラン
             </h2>
-            <p className="mt-4 text-lg text-zinc-500">
+            <p className="mt-3 text-sm sm:mt-4 sm:text-lg text-zinc-500">
               14日間の無料トライアル付き
             </p>
           </div>
-          <div className="mt-16 grid gap-8 lg:grid-cols-2">
+          <div className="mt-10 grid gap-5 sm:mt-16 sm:gap-8 lg:grid-cols-2">
             {/* Free */}
-            <div className="rounded-2xl border border-zinc-200 bg-white p-8">
-              <h3 className="text-lg font-semibold text-zinc-900">フリー</h3>
-              <div className="mt-4 flex items-baseline gap-1">
-                <span className="text-4xl font-bold text-zinc-900">0</span>
-                <span className="text-zinc-500">円 / 月</span>
+            <div className="rounded-2xl border border-zinc-200 bg-white p-6 sm:p-8">
+              <h3 className="text-base sm:text-lg font-semibold text-zinc-900">フリー</h3>
+              <div className="mt-3 sm:mt-4 flex items-baseline gap-1">
+                <span className="text-3xl sm:text-4xl font-bold text-zinc-900">0</span>
+                <span className="text-sm sm:text-base text-zinc-500">円 / 月</span>
               </div>
-              <p className="mt-4 text-sm text-zinc-500">まずは試してみたい方に</p>
-              <ul className="mt-6 space-y-3 text-sm text-zinc-600">
+              <p className="mt-3 sm:mt-4 text-xs sm:text-sm text-zinc-500">まずは試してみたい方に</p>
+              <ul className="mt-5 sm:mt-6 space-y-2.5 sm:space-y-3 text-sm text-zinc-600">
                 {["AI投稿生成（月30件）", "競合分析（3アカウント）", "スケジュール投稿", "基本レポート"].map((item) => (
                   <li key={item} className="flex items-center gap-2">
                     <svg className="h-4 w-4 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -221,24 +221,24 @@ export default function LandingPage() {
               </ul>
               <a
                 href="https://urubot.app/signup"
-                className="mt-8 block w-full rounded-full border border-zinc-300 py-3 text-center text-sm font-semibold text-zinc-700 hover:bg-zinc-50 transition-colors"
+                className="mt-6 sm:mt-8 block w-full rounded-full border border-zinc-300 py-2.5 sm:py-3 text-center text-sm font-semibold text-zinc-700 hover:bg-zinc-50 transition-colors"
               >
                 無料で始める
               </a>
-              <p className="mt-3 text-center text-xs text-zinc-400">ずっと無料・クレカ不要</p>
+              <p className="mt-2 sm:mt-3 text-center text-xs text-zinc-400">ずっと無料・クレカ不要</p>
             </div>
             {/* Pro */}
-            <div className="relative rounded-2xl border-2 border-blue-500 bg-white p-8 shadow-lg shadow-blue-500/10">
+            <div className="relative rounded-2xl border-2 border-blue-500 bg-white p-6 sm:p-8 shadow-lg shadow-blue-500/10">
               <div className="absolute -top-3 left-6 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-3 py-0.5 text-xs font-medium text-white">
                 おすすめ
               </div>
-              <h3 className="text-lg font-semibold text-zinc-900">プロ</h3>
-              <div className="mt-4 flex items-baseline gap-1">
-                <span className="text-4xl font-bold text-zinc-900">4,980</span>
-                <span className="text-zinc-500">円 / 月</span>
+              <h3 className="text-base sm:text-lg font-semibold text-zinc-900">プロ</h3>
+              <div className="mt-3 sm:mt-4 flex items-baseline gap-1">
+                <span className="text-3xl sm:text-4xl font-bold text-zinc-900">4,980</span>
+                <span className="text-sm sm:text-base text-zinc-500">円 / 月</span>
               </div>
-              <p className="mt-4 text-sm text-zinc-500">本格的にThreadsを伸ばしたい方に</p>
-              <ul className="mt-6 space-y-3 text-sm text-zinc-600">
+              <p className="mt-3 sm:mt-4 text-xs sm:text-sm text-zinc-500">本格的にThreadsを伸ばしたい方に</p>
+              <ul className="mt-5 sm:mt-6 space-y-2.5 sm:space-y-3 text-sm text-zinc-600">
                 {[
                   "AI投稿生成（無制限）",
                   "競合分析（無制限）",
@@ -258,28 +258,28 @@ export default function LandingPage() {
               </ul>
               <a
                 href="https://urubot.app/signup?plan=pro"
-                className="mt-8 block w-full rounded-full bg-gradient-to-r from-blue-600 to-purple-600 py-3 text-center text-sm font-semibold text-white shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all"
+                className="mt-6 sm:mt-8 block w-full rounded-full bg-gradient-to-r from-blue-600 to-purple-600 py-2.5 sm:py-3 text-center text-sm font-semibold text-white shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all"
               >
                 14日間無料で試す
               </a>
-              <p className="mt-3 text-center text-xs text-zinc-400">クレジットカード不要</p>
+              <p className="mt-2 sm:mt-3 text-center text-xs text-zinc-400">クレジットカード不要</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="bg-gradient-to-br from-blue-600 to-purple-700 py-20 sm:py-24">
-        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+      <section className="bg-gradient-to-br from-blue-600 to-purple-700 py-14 sm:py-24">
+        <div className="mx-auto max-w-3xl px-5 text-center sm:px-6">
+          <h2 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
             今日からThreads運用を自動化しよう
           </h2>
-          <p className="mt-4 text-lg text-blue-100">
+          <p className="mt-3 text-sm sm:mt-4 sm:text-lg text-blue-100">
             面倒な投稿作成はAIに任せて、あなたは戦略に集中できます。
           </p>
           <a
             href="https://urubot.app/signup"
-            className="mt-8 inline-block rounded-full bg-white px-8 py-3.5 text-base font-semibold text-blue-700 shadow-lg hover:bg-blue-50 transition-colors"
+            className="mt-6 sm:mt-8 inline-block rounded-full bg-white px-8 py-3 text-sm sm:py-3.5 sm:text-base font-semibold text-blue-700 shadow-lg hover:bg-blue-50 transition-colors"
           >
             無料で始める
           </a>
@@ -287,14 +287,14 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-zinc-200 bg-white py-10">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <footer className="border-t border-zinc-200 bg-white py-8 sm:py-10">
+        <div className="mx-auto max-w-6xl px-5 sm:px-6">
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
             <div className="flex items-center gap-2">
               <Image src="/icon.png" alt="UruBot" width={24} height={24} className="rounded-md" />
               <span className="text-sm font-semibold text-zinc-900">UruBot</span>
             </div>
-            <div className="flex gap-6 text-sm text-zinc-500">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-zinc-500">
               <a href="https://urubot.app/terms" className="hover:text-zinc-900 transition-colors">利用規約</a>
               <a href="https://urubot.app/privacy" className="hover:text-zinc-900 transition-colors">プライバシーポリシー</a>
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSc9GA4TZx4-Hat-X_Gb9gkbP5h2kueKIy_tve7IUcFZMJPAEQ/viewform" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-900 transition-colors">お問い合わせ</a>
