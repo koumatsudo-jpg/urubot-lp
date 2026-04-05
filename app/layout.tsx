@@ -11,11 +11,21 @@ export const metadata: Metadata = {
   title: "UruBot - AIでThreads運用を自動化",
   description:
     "投稿生成、競合分析、スコアリング、スケジュール投稿。UruBotがあなたのThreads運用をまるごと自動化します。",
+  metadataBase: new URL("https://lp.urubot.app"),
   openGraph: {
     title: "UruBot - AIでThreads運用を自動化",
     description:
       "投稿生成、競合分析、スコアリング、スケジュール投稿。UruBotがあなたのThreads運用をまるごと自動化します。",
     type: "website",
+    url: "https://lp.urubot.app",
+    images: [{ url: "/logo.png", width: 512, height: 512, alt: "UruBot" }],
+  },
+  twitter: {
+    card: "summary",
+    title: "UruBot - AIでThreads運用を自動化",
+    description:
+      "投稿生成、競合分析、スコアリング、スケジュール投稿。UruBotがあなたのThreads運用をまるごと自動化します。",
+    images: ["/logo.png"],
   },
 };
 

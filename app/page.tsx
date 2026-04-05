@@ -60,6 +60,7 @@ export default function LandingPage() {
             <a href="#features" className="hover:text-zinc-900 transition-colors">機能</a>
             <a href="#how-it-works" className="hover:text-zinc-900 transition-colors">使い方</a>
             <a href="#pricing" className="hover:text-zinc-900 transition-colors">料金</a>
+            <a href="#faq" className="hover:text-zinc-900 transition-colors">FAQ</a>
           </nav>
           <a
             href="https://urubot.app/signup"
@@ -264,6 +265,120 @@ export default function LandingPage() {
               </a>
               <p className="mt-2 sm:mt-3 text-center text-xs text-zinc-400">クレジットカード不要</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Comparison Table */}
+      <section className="bg-zinc-50 py-14 sm:py-28">
+        <div className="mx-auto max-w-3xl px-5 sm:px-6">
+          <div className="text-center">
+            <h2 className="text-2xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
+              プラン<span className="text-blue-600">比較</span>
+            </h2>
+            <p className="mt-3 text-sm sm:mt-4 sm:text-lg text-zinc-500">
+              あなたに合ったプランを選べます
+            </p>
+          </div>
+          <div className="mt-10 overflow-x-auto sm:mt-16">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-zinc-200">
+                  <th className="py-3 pr-4 text-left font-medium text-zinc-500">機能</th>
+                  <th className="py-3 px-4 text-center font-semibold text-zinc-900">フリー</th>
+                  <th className="py-3 pl-4 text-center font-semibold text-blue-600">プロ</th>
+                </tr>
+              </thead>
+              <tbody className="text-zinc-600">
+                {[
+                  { feature: "AI投稿生成", free: "月30件", pro: "無制限" },
+                  { feature: "競合アカウント追跡", free: "3件", pro: "無制限" },
+                  { feature: "スケジュール投稿", free: true, pro: true },
+                  { feature: "競合スコアリング", free: true, pro: true },
+                  { feature: "自動フィードバックループ", free: false, pro: true },
+                  { feature: "AIレビュー", free: false, pro: true },
+                  { feature: "CRM & LINE連携", free: false, pro: true },
+                  { feature: "売上分析", free: false, pro: true },
+                  { feature: "月次AIレポート", free: false, pro: true },
+                  { feature: "優先サポート", free: false, pro: true },
+                ].map((row) => (
+                  <tr key={row.feature} className="border-b border-zinc-100">
+                    <td className="py-3 pr-4 text-zinc-700">{row.feature}</td>
+                    <td className="py-3 px-4 text-center">
+                      {typeof row.free === "boolean" ? (
+                        row.free ? (
+                          <svg className="inline h-5 w-5 text-emerald-500" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                        ) : (
+                          <span className="text-zinc-300">&mdash;</span>
+                        )
+                      ) : (
+                        <span className="text-zinc-700">{row.free}</span>
+                      )}
+                    </td>
+                    <td className="py-3 pl-4 text-center">
+                      {typeof row.pro === "boolean" ? (
+                        <svg className="inline h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                      ) : (
+                        <span className="font-medium text-blue-600">{row.pro}</span>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section id="faq" className="py-14 sm:py-28">
+        <div className="mx-auto max-w-3xl px-5 sm:px-6">
+          <div className="text-center">
+            <h2 className="text-2xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
+              よくある<span className="text-blue-600">質問</span>
+            </h2>
+          </div>
+          <div className="mt-10 sm:mt-16 divide-y divide-zinc-200">
+            {[
+              {
+                q: "無料プランに期限はありますか？",
+                a: "いいえ、フリープランはずっと無料でご利用いただけます。月30件の投稿生成と3アカウントの競合分析が含まれます。",
+              },
+              {
+                q: "14日間のトライアル後はどうなりますか？",
+                a: "自動的にフリープランに切り替わります。クレジットカードの登録は不要なので、勝手に課金されることはありません。",
+              },
+              {
+                q: "プロプランの解約はいつでもできますか？",
+                a: "はい、いつでもワンクリックで解約できます。解約後も契約期間の終了まではプロ機能をご利用いただけます。",
+              },
+              {
+                q: "Threadsアカウントの連携は安全ですか？",
+                a: "Meta公式のOAuth認証を使用しており、パスワードをUruBotに共有する必要はありません。連携はいつでも解除できます。",
+              },
+              {
+                q: "AIが生成した投稿はそのまま使えますか？",
+                a: "はい、そのまま投稿できる品質で生成されます。もちろん編集も可能です。投稿前にプレビューで確認し、必要に応じて調整できます。",
+              },
+              {
+                q: "複数のThreadsアカウントに対応していますか？",
+                a: "はい、プロプランでは複数のThreadsアカウントを接続し、アカウントを切り替えて運用できます。",
+              },
+              {
+                q: "データのセキュリティはどうなっていますか？",
+                a: "データはSupabase（PostgreSQL）に暗号化して保存されます。通信はすべてHTTPS暗号化されており、第三者にデータが共有されることはありません。",
+              },
+            ].map((item) => (
+              <details key={item.q} className="group">
+                <summary className="flex cursor-pointer items-center justify-between py-4 sm:py-5 text-sm sm:text-base font-medium text-zinc-900 hover:text-blue-600 transition-colors">
+                  {item.q}
+                  <svg className="h-5 w-5 shrink-0 text-zinc-400 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </summary>
+                <p className="pb-4 sm:pb-5 text-sm leading-relaxed text-zinc-500">{item.a}</p>
+              </details>
+            ))}
           </div>
         </div>
       </section>
