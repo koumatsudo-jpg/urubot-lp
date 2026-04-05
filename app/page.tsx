@@ -295,9 +295,9 @@ export default function LandingPage() {
               <span className="text-sm font-semibold text-zinc-900">UruBot</span>
             </div>
             <div className="flex gap-6 text-sm text-zinc-500">
-              <a href="#" className="hover:text-zinc-900 transition-colors">利用規約</a>
-              <a href="#" className="hover:text-zinc-900 transition-colors">プライバシー</a>
-              <a href="#" className="hover:text-zinc-900 transition-colors">お問い合わせ</a>
+              <a href="https://urubot.app/terms" className="hover:text-zinc-900 transition-colors">利用規約</a>
+              <a href="https://urubot.app/privacy" className="hover:text-zinc-900 transition-colors">プライバシーポリシー</a>
+              <a href="mailto:support@urubot.app" className="hover:text-zinc-900 transition-colors">お問い合わせ</a>
             </div>
             <p className="text-xs text-zinc-400">&copy; 2026 UruBot. All rights reserved.</p>
           </div>
