@@ -127,8 +127,8 @@ export default function LandingPage() {
             <Image
               src="/shot-dashboard.png"
               alt="UruBot ダッシュボード画面"
-              width={1440}
-              height={900}
+              width={1665}
+              height={958}
               priority
               className="w-full"
             />
