@@ -63,7 +63,7 @@ export default function LandingPage() {
             <a href="#faq" className="hover:text-zinc-900 transition-colors">FAQ</a>
           </nav>
           <a
-            href="https://urubot.app/signup"
+            href="https://app.urubot.app/signup"
             className="rounded-full bg-zinc-900 px-4 py-1.5 text-xs sm:px-5 sm:py-2 sm:text-sm font-medium text-white hover:bg-zinc-700 transition-colors"
           >
             無料で始める
@@ -95,7 +95,7 @@ export default function LandingPage() {
           </p>
           <div className="mt-8 flex flex-col items-center gap-3 sm:mt-10 sm:flex-row sm:justify-center sm:gap-4 animate-fade-in-up animate-delay-300">
             <a
-              href="https://urubot.app/signup"
+              href="https://app.urubot.app/signup"
               className="w-full sm:w-auto rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-3 text-sm sm:py-3.5 sm:text-base font-semibold text-white shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all hover:-translate-y-0.5"
             >
               無料で始める
@@ -221,7 +221,7 @@ export default function LandingPage() {
                 ))}
               </ul>
               <a
-                href="https://urubot.app/signup"
+                href="https://app.urubot.app/signup"
                 className="mt-6 sm:mt-8 block w-full rounded-full border border-zinc-300 py-2.5 sm:py-3 text-center text-sm font-semibold text-zinc-700 hover:bg-zinc-50 transition-colors"
               >
                 無料で始める
@@ -258,7 +258,7 @@ export default function LandingPage() {
                 ))}
               </ul>
               <a
-                href="https://urubot.app/signup?plan=pro"
+                href="https://app.urubot.app/signup?plan=pro"
                 className="mt-6 sm:mt-8 block w-full rounded-full bg-gradient-to-r from-blue-600 to-purple-600 py-2.5 sm:py-3 text-center text-sm font-semibold text-white shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all"
               >
                 14日間無料で試す
@@ -393,7 +393,7 @@ export default function LandingPage() {
             面倒な投稿作成はAIに任せて、あなたは戦略に集中できます。
           </p>
           <a
-            href="https://urubot.app/signup"
+            href="https://app.urubot.app/signup"
             className="mt-6 sm:mt-8 inline-block rounded-full bg-white px-8 py-3 text-sm sm:py-3.5 sm:text-base font-semibold text-blue-700 shadow-lg hover:bg-blue-50 transition-colors"
           >
             無料で始める
@@ -410,8 +410,8 @@ export default function LandingPage() {
               <span className="text-sm font-semibold text-zinc-900">UruBot</span>
             </div>
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-zinc-500">
-              <a href="https://urubot.app/terms" className="hover:text-zinc-900 transition-colors">利用規約</a>
-              <a href="https://urubot.app/privacy" className="hover:text-zinc-900 transition-colors">プライバシーポリシー</a>
+              <a href="https://app.urubot.app/terms" className="hover:text-zinc-900 transition-colors">利用規約</a>
+              <a href="https://app.urubot.app/privacy" className="hover:text-zinc-900 transition-colors">プライバシーポリシー</a>
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSc9GA4TZx4-Hat-X_Gb9gkbP5h2kueKIy_tve7IUcFZMJPAEQ/viewform" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-900 transition-colors">お問い合わせ</a>
             </div>
             <p className="text-xs text-zinc-400">&copy; 2026 UruBot. All rights reserved.</p>
