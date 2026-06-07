@@ -111,6 +111,31 @@ export default function LandingPage() {
             クレジットカード不要 / 14日間無料 / いつでもキャンセル可能
           </p>
         </div>
+
+        {/* Hero product shot */}
+        <div className="relative mx-auto mt-12 max-w-5xl px-4 sm:mt-16 sm:px-6 animate-fade-in-up animate-delay-400">
+          <div className="overflow-hidden rounded-xl border border-zinc-200/80 bg-white shadow-2xl shadow-blue-500/10 ring-1 ring-zinc-900/5 sm:rounded-2xl">
+            {/* Browser chrome */}
+            <div className="flex items-center gap-1.5 border-b border-zinc-100 bg-zinc-50/80 px-3 py-2 sm:px-4 sm:py-2.5">
+              <span className="h-2.5 w-2.5 rounded-full bg-red-400" />
+              <span className="h-2.5 w-2.5 rounded-full bg-yellow-400" />
+              <span className="h-2.5 w-2.5 rounded-full bg-green-400" />
+              <span className="ml-3 hidden truncate rounded-md bg-white px-3 py-0.5 text-[11px] text-zinc-400 ring-1 ring-zinc-200 sm:inline-block">
+                app.urubot.app/dashboard
+              </span>
+            </div>
+            <Image
+              src="/shot-dashboard.png"
+              alt="UruBot ダッシュボード画面"
+              width={1440}
+              height={900}
+              priority
+              className="w-full"
+            />
+          </div>
+          {/* glow */}
+          <div className="absolute -inset-x-4 -bottom-6 -z-10 h-24 bg-gradient-to-t from-blue-200/30 to-transparent blur-2xl" />
+        </div>
       </section>
 
       {/* Social Proof */}
@@ -161,6 +186,58 @@ export default function LandingPage() {
                 <p className="mt-1.5 text-sm leading-relaxed text-zinc-500 sm:mt-2">{f.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Product Showcase */}
+      <section className="border-t border-zinc-100 bg-gradient-to-b from-white to-zinc-50 py-14 sm:py-28">
+        <div className="mx-auto max-w-6xl px-5 sm:px-6">
+          <div className="text-center">
+            <h2 className="text-2xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
+              実際の<span className="text-blue-600">管理画面</span>
+            </h2>
+            <p className="mt-3 text-sm sm:mt-4 sm:text-lg text-zinc-500">
+              競合分析もスケジュール投稿も、ひと目で把握できる
+            </p>
+          </div>
+          <div className="mt-10 grid gap-6 sm:mt-16 sm:gap-8 lg:grid-cols-2">
+            {/* Competitors */}
+            <div className="group rounded-2xl border border-zinc-200 bg-white p-3 shadow-sm transition-all hover:shadow-xl hover:shadow-blue-500/5 sm:p-4">
+              <div className="overflow-hidden rounded-xl border border-zinc-100">
+                <Image
+                  src="/shot-competitors.png"
+                  alt="UruBot 競合分析画面"
+                  width={1440}
+                  height={900}
+                  className="w-full"
+                />
+              </div>
+              <div className="px-2 pb-1 pt-4">
+                <h3 className="text-base sm:text-lg font-semibold text-zinc-900">競合を拡散力スコアで丸裸に</h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-zinc-500">
+                  競合アカウントの投稿を独自スコアで数値化。バズの構造を分析して、自分の投稿に活かせます。
+                </p>
+              </div>
+            </div>
+            {/* Calendar */}
+            <div className="group rounded-2xl border border-zinc-200 bg-white p-3 shadow-sm transition-all hover:shadow-xl hover:shadow-blue-500/5 sm:p-4">
+              <div className="overflow-hidden rounded-xl border border-zinc-100">
+                <Image
+                  src="/shot-calendar.png"
+                  alt="UruBot コンテンツカレンダー画面"
+                  width={1440}
+                  height={900}
+                  className="w-full"
+                />
+              </div>
+              <div className="px-2 pb-1 pt-4">
+                <h3 className="text-base sm:text-lg font-semibold text-zinc-900">投稿を予約してあとは自動</h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-zinc-500">
+                  朝・昼・夜の最適な時間に自動投稿。カレンダーでストック状況がひと目でわかります。
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
