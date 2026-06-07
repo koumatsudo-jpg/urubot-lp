@@ -202,6 +202,24 @@ export default function LandingPage() {
             </p>
           </div>
           <div className="mt-10 grid gap-6 sm:mt-16 sm:gap-8 lg:grid-cols-2">
+            {/* Generate */}
+            <div className="group rounded-2xl border border-zinc-200 bg-white p-3 shadow-sm transition-all hover:shadow-xl hover:shadow-blue-500/5 sm:p-4">
+              <div className="overflow-hidden rounded-xl border border-zinc-100">
+                <Image
+                  src="/shot-generate.png"
+                  alt="UruBot 投稿生成画面"
+                  width={1600}
+                  height={920}
+                  className="w-full"
+                />
+              </div>
+              <div className="px-2 pb-1 pt-4">
+                <h3 className="text-base sm:text-lg font-semibold text-zinc-900">カテゴリを選ぶだけでAIが一括生成</h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-zinc-500">
+                  エピソード型・逆説型などのパターンを選択。Claudeが1週間分の投稿をまとめて作成します。
+                </p>
+              </div>
+            </div>
             {/* Competitors */}
             <div className="group rounded-2xl border border-zinc-200 bg-white p-3 shadow-sm transition-all hover:shadow-xl hover:shadow-blue-500/5 sm:p-4">
               <div className="overflow-hidden rounded-xl border border-zinc-100">
@@ -217,6 +235,24 @@ export default function LandingPage() {
                 <h3 className="text-base sm:text-lg font-semibold text-zinc-900">競合を拡散力スコアで丸裸に</h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-zinc-500">
                   競合アカウントの投稿を独自スコアで数値化。バズの構造を分析して、自分の投稿に活かせます。
+                </p>
+              </div>
+            </div>
+            {/* AI Learning */}
+            <div className="group rounded-2xl border border-zinc-200 bg-white p-3 shadow-sm transition-all hover:shadow-xl hover:shadow-blue-500/5 sm:p-4">
+              <div className="overflow-hidden rounded-xl border border-zinc-100">
+                <Image
+                  src="/shot-ai-learning.png"
+                  alt="UruBot AI学習画面"
+                  width={1600}
+                  height={920}
+                  className="w-full"
+                />
+              </div>
+              <div className="px-2 pb-1 pt-4">
+                <h3 className="text-base sm:text-lg font-semibold text-zinc-900">使うほど賢くなるAI学習</h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-zinc-500">
+                  競合データと投稿実績からバズの勝ちパターンを自動抽出。生成プロンプトが自動で改善され続けます。
                 </p>
               </div>
             </div>
